@@ -1,0 +1,13 @@
+<nav [ngClass]="{'show' : showNavbar()}">
+    <div class="row">
+        <div class="container-fluid">
+            <div class="responsive" (click)="menuOpen = !menuOpen"><i class="fas fa-bars fa-2x"></i></div>
+            <ul class="nav-menu" [ngClass]="{ 'open' : menuOpen }">
+                <li><a scrollTo="#home" (click)="menuOpen = false">Home</a></li>
+                <li><a scrollTo="#about" scrollOffSet="100" (click)="menuOpen = false">About</a></li>
+                <li><a scrollTo="#technologies" scrollOffSet="150" (click)="menuOpen = false">Technologies</a></li>
+                <li><a scrollTo="#contact" (click)="menuOpen = false">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

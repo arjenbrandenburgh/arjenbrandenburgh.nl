@@ -1,0 +1,23 @@
+footer {
+    background: #000;
+    padding: 90px 0;
+    text-align: center;
+
+    p {
+        font-size: 14px;
+        color: #757575;
+        line-height: 27px;
+    }
+}
+
+.social {
+    height: 30px;
+
+    a {
+        color: #b1b1b1;
+        font-size: 15px;
+        margin: 0 10px;
+        transition: all ease 0.3s;
+        font-size: 13px;
+    }
+}

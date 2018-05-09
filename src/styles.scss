@@ -1,0 +1,33 @@
+@import "styles/flexboxgrid.scss";
+@import "styles/fonts.scss";
+
+
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+
+a:hover {
+    cursor:pointer;
+}
+
+.dgray-bg {
+    background: #f5f5f5;
+}
+
+.section-title h2 {
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+section {
+  position: relative;
+  display: block;
+}
+
