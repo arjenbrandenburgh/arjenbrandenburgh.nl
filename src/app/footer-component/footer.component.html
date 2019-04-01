@@ -1,11 +1,8 @@
 <footer>
 	<div class="container-fluid">
 		<div class="social">
-			<a href="{{socialLinks['facebook']}}">facebook </a>
-			<a href="{{socialLinks['twitter']}}">twitter </a>
-			<a href="{{socialLinks['github']}}">github </a>
-			<a href="{{socialLinks['linkedin']}}">linkedin</a>
+			<a *ngFor="let social of socialLinks" target="_blank" [href]="social.url"><i class="fab fa-2x" [ngClass]="social.icon" aria-hidden="true"></i>  </a>
 		</div>
-		<p>Copyright © 2018 Arjen Brandenburgh, All rights Reserved.</p>
+		<p>Copyright © 2019 Arjen Brandenburgh, All rights Reserved.</p>
 	</div>
 </footer>

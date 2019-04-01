@@ -11,10 +11,7 @@
 
             <div class="col-xs-12 col-md-4">
                 <div class="social-icons"> 
-                    <a href="{{socialLinks['facebook']}}"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a> 
-                    <a href="{{socialLinks['twitter']}}"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a> 
-                    <a href="{{socialLinks['github']}}"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a> 
-                    <a href="{{socialLinks['linkedin']}}"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a> 
+                    <a *ngFor="let social of socialLinks" target="_blank" [href]="social.url"><i class="fab fa-2x" [ngClass]="social.icon" aria-hidden="true"></i></a>
                 </div>
 
                 <ul class="contact-info">
