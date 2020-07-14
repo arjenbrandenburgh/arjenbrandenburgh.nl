@@ -1,6 +1,14 @@
 import { Component, HostListener, ElementRef } from '@angular/core';
-import { animate, keyframes, style, query, stagger, state, trigger, transition } from '@angular/animations';
-
+import {
+  animate,
+  keyframes,
+  style,
+  query,
+  stagger,
+  state,
+  trigger,
+  transition,
+} from '@angular/animations';
 
 @Component({
   selector: 'technologies-component', // tslint:disable-line
@@ -19,13 +27,13 @@ import { animate, keyframes, style, query, stagger, state, trigger, transition }
                 '550ms ease-out',
                 style({ opacity: 1, transform: 'translateY(0px)' })
               )
-            )
+            ),
           ],
           { optional: true }
-        )
-      ])
-    ])
-  ]
+        ),
+      ]),
+    ]),
+  ],
 })
 export class TechnologiesComponent {
   state = 'hide';
@@ -33,114 +41,116 @@ export class TechnologiesComponent {
   technologiesHidden = [
     {
       name: 'AngularJS<br/>Angular2+',
-      image: 'angular.svg'
+      image: 'angular.svg',
     },
     {
       name: 'HTML5',
-      image: 'html5.svg'
+      image: 'html5.svg',
     },
     {
       name: 'CSS3',
-      image: 'css3.svg'
+      image: 'css3.svg',
     },
     {
       name: 'Vanilla Javascript',
-      image: 'javascript.svg'
+      image: 'javascript.svg',
     },
     {
       name: 'SASS',
-      image: 'sass.svg'
+      image: 'sass.svg',
     },
     {
       name: 'LESS',
-      image: 'less.svg'
+      image: 'less.svg',
     },
     {
       name: 'RequireJS',
-      image: 'requirejs.svg'
+      image: 'requirejs.svg',
     },
     {
       name: 'jQuery',
-      image: 'jquery.svg'
+      image: 'jquery.svg',
     },
     {
       name: 'NPM',
-      image: 'npm.svg'
+      image: 'npm.svg',
     },
     {
       name: 'NodeJS',
-      image: 'nodejs.svg'
+      image: 'nodejs.svg',
     },
     {
       name: 'Twitter Bootstrap',
-      image: 'bootstrap.svg'
+      image: 'bootstrap.svg',
     },
     {
       name: 'Gulp',
-      image: 'gulp.svg'
+      image: 'gulp.svg',
     },
     {
       name: 'Grunt',
-      image: 'grunt.svg'
+      image: 'grunt.svg',
     },
     {
       name: 'Bower',
-      image: 'bower.svg'
+      image: 'bower.svg',
     },
     {
       name: 'Webpack',
-      image: 'webpack.svg'
+      image: 'webpack.svg',
     },
     {
       name: 'Ruby on Rails',
-      image: 'rails.svg'
+      image: 'rails.svg',
     },
     {
       name: 'Git',
-      image: 'git.svg'
+      image: 'git.svg',
     },
     {
       name: 'PHP',
-      image: 'php.svg'
+      image: 'php.svg',
     },
     {
       name: 'MySQL',
-      image: 'mysql.svg'
+      image: 'mysql.svg',
     },
     {
       name: 'Python',
-      image: 'python.svg'
+      image: 'python.svg',
     },
     {
       name: 'Jasmine',
-      image: 'jasmine.svg'
+      image: 'jasmine.svg',
     },
     {
       name: 'Karma',
-      image: 'karma.svg'
+      image: 'karma.svg',
     },
     {
       name: 'Mocha',
-      image: 'mocha.svg'
+      image: 'mocha.svg',
     },
     {
       name: 'Docker',
-      image: 'docker.svg'
+      image: 'docker.svg',
     },
   ];
 
-  constructor(public el: ElementRef) { }
+  constructor(public el: ElementRef) {}
 
   @HostListener('window:scroll', ['$event'])
-    checkScroll() {
-      const elementPos = this.el.nativeElement.offsetTop || 0;
-      const elementHeight = this.el.nativeElement.offsetHeight;
-      const windowHeight = window.innerHeight;
-      const scrollPos = window.scrollY;
+  checkScroll() {
+    const elementPos = this.el.nativeElement.offsetTop || 0;
+    const elementHeight = this.el.nativeElement.offsetHeight;
+    const windowHeight = window.innerHeight;
+    const scrollPos = window.scrollY;
 
-      if (scrollPos >= elementPos || (scrollPos + windowHeight) >= (elementPos + elementHeight)) {
-        this.technologies = this.technologiesHidden;
-      }
+    if (
+      scrollPos >= elementPos ||
+      scrollPos + windowHeight >= elementPos + elementHeight
+    ) {
+      this.technologies = this.technologiesHidden;
     }
-
+  }
 }

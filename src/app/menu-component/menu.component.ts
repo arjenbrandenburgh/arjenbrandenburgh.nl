@@ -7,16 +7,15 @@ fontawesome.library.add(faBars);
 @Component({
   selector: 'menu-component', // tslint:disable-line
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent {
   menuOpen = false;
 
-  constructor() { }
+  constructor() {}
 
- @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll', ['$event'])
   showNavbar(): boolean {
     return window.scrollY > 400;
   }
-
 }

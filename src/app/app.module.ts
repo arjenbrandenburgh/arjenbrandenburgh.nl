@@ -23,13 +23,10 @@ import { ContactComponent } from './contact-component/contact.component';
     FooterComponent,
     MenuComponent,
 
-    ScrollToDirective
+    ScrollToDirective,
   ],
-  imports: [
-    BrowserAnimationsModule,
-    BrowserModule
-  ],
+  imports: [BrowserAnimationsModule, BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

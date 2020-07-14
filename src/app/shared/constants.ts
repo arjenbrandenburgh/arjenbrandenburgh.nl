@@ -4,27 +4,27 @@ export class Constants {
       {
         name: 'Github',
         icon: 'fa-github',
-        url: 'https://www.linkedin.com/in/arjenbrandenburgh/'
+        url: 'https://www.linkedin.com/in/arjenbrandenburgh/',
       },
       {
         name: 'Medium',
         icon: 'fa-medium',
-        url: 'https://medium.com/@arjenbrandenburgh/'
+        url: 'https://medium.com/@arjenbrandenburgh/',
       },
       {
         name: 'Facebook',
         icon: 'fa-facebook',
-        url: 'https://www.facebook.com/ArjenBrandenburgh'
+        url: 'https://www.facebook.com/ArjenBrandenburgh',
       },
       {
         name: 'Twitter',
         icon: 'fa-twitter',
-        url: 'https://twitter.com/ArjenBrand'
+        url: 'https://twitter.com/ArjenBrand',
       },
       {
         name: 'LinkedIn',
         icon: 'fa-linkedin',
-        url: 'https://www.linkedin.com/in/arjenbrandenburgh/'
+        url: 'https://www.linkedin.com/in/arjenbrandenburgh/',
       },
     ];
   }
