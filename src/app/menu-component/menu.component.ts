@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, ChangeDetectionStrategy } from '@angular/core';
 
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 
@@ -6,6 +6,7 @@ import {faBars} from '@fortawesome/free-solid-svg-icons';
   selector: 'menu-component', // tslint:disable-line
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MenuComponent {
   faBars = faBars;

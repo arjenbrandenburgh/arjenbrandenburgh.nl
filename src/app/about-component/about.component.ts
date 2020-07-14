@@ -1,4 +1,4 @@
-import { Component, HostListener, ElementRef } from '@angular/core';
+import { Component, HostListener, ElementRef, ChangeDetectionStrategy } from '@angular/core';
 import {
   animate,
   keyframes,
@@ -17,6 +17,7 @@ import {
   selector: 'about-component', // tslint:disable-line
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [
     trigger('scrollAnimation', [
       transition('hide => show', [

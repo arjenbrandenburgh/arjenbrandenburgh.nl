@@ -38,7 +38,7 @@ export class ScrollToDirective {
     const clock: number = Date.now();
     const requestAnimationFrame =
       window.requestAnimationFrame ||
-      function(fn) {
+      function (fn) {
         window.setTimeout(fn, 15);
       };
 

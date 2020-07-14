@@ -1,11 +1,9 @@
-import { Component, HostListener, ElementRef } from '@angular/core';
+import { Component, HostListener, ElementRef, ChangeDetectionStrategy } from '@angular/core';
 import {
   animate,
-  keyframes,
   style,
   query,
   stagger,
-  state,
   trigger,
   transition,
 } from '@angular/animations';
@@ -14,6 +12,7 @@ import {
   selector: 'technologies-component', // tslint:disable-line
   templateUrl: './technologies.component.html',
   styleUrls: ['./technologies.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [
     trigger('listStagger', [
       transition('* <=> *', [
