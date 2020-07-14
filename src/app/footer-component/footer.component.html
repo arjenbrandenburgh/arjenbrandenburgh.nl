@@ -1,8 +1,10 @@
 <footer>
-	<div class="container-fluid">
-		<div class="social">
-			<a *ngFor="let social of socialLinks" target="_blank" [href]="social.url"><i class="fab fa-2x" [ngClass]="social.icon" aria-hidden="true"></i>  </a>
-		</div>
-		<p>Copyright © 2020 Arjen Brandenburgh, All rights Reserved.</p>
-	</div>
+  <div class="container-fluid">
+    <div class="social">
+      <a *ngFor="let social of socialLinks" target="_blank" [href]="social.url"
+        ><fa-icon [icon]="social.icon" size="2x"></fa-icon>
+      </a>
+    </div>
+    <p>Copyright © 2020 Arjen Brandenburgh, All rights Reserved.</p>
+  </div>
 </footer>

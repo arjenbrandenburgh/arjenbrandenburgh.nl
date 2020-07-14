@@ -1,18 +1,35 @@
 <section class="home" id="home">
-    <div class="home-content">
-        <div class="container-fluid">
-            <h1>Arjen Brandenburgh</h1>
-            <h3>Senior Fullstack Engineer & Consultant</h3>
-            <div class="social">
-                <a *ngFor="let social of socialLinks" target="_blank" [href]="social.url"><i class="fab fa-2x" [ngClass]="social.icon" aria-hidden="true"></i></a>
-            </div>
-            <a class="home-down bounce active" scrollTo="#about" scrollOffSet="100"><i class="fas fa-angle-down fa-2x"></i></a>
-        </div>
+  <div class="home-content">
+    <div class="container-fluid">
+      <h1>Arjen Brandenburgh</h1>
+      <h3>Senior Fullstack Engineer & Consultant</h3>
+      <div class="social">
+        <a
+          *ngFor="let social of socialLinks"
+          target="_blank"
+          [href]="social.url"
+          ><fa-icon [icon]="social.icon" size="2x"></fa-icon></a>
+      </div>
+      <a class="home-down bounce active" scrollTo="#about" scrollOffSet="100"
+        ><fa-icon [icon]="faAngleDown" size="2x"></fa-icon></a>
     </div>
-    <svg class="diagonal home-left" width="20%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
-        <path d="M0 100 L100 100 L0 10 Z"></path>
-    </svg>
-    <svg class="diagonal home-right" width="80%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
-        <path d="M0 100 L100 100 L100 10 Z"></path>
-    </svg>
+  </div>
+  <svg
+    class="diagonal home-left"
+    width="20%"
+    height="170"
+    viewBox="0 0 100 102"
+    preserveAspectRatio="none"
+  >
+    <path d="M0 100 L100 100 L0 10 Z"></path>
+  </svg>
+  <svg
+    class="diagonal home-right"
+    width="80%"
+    height="170"
+    viewBox="0 0 100 102"
+    preserveAspectRatio="none"
+  >
+    <path d="M0 100 L100 100 L100 10 Z"></path>
+  </svg>
 </section>

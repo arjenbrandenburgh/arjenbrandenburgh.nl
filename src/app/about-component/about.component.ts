@@ -7,15 +7,11 @@ import {
   transition,
 } from '@angular/animations';
 
-import fontawesome from '@fortawesome/fontawesome';
 import {
   faFlask,
   faPaintBrush,
   faWrench,
-} from '@fortawesome/fontawesome-free-solid';
-fontawesome.library.add(faFlask);
-fontawesome.library.add(faPaintBrush);
-fontawesome.library.add(faWrench);
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'about-component', // tslint:disable-line
@@ -36,13 +32,17 @@ fontawesome.library.add(faWrench);
   ],
 })
 export class AboutComponent {
+  faFlask = faFlask;
+  faPaintBrush = faPaintBrush;
+  faWrench = faWrench;
+
   state = 'hide';
   xpYears = new Date().getFullYear() - 2010;
 
   constructor(public el: ElementRef) {}
 
   @HostListener('window:scroll', ['$event'])
-  checkScroll() {
+  checkScroll(): void {
     const elementPos = this.el.nativeElement.offsetTop || 0;
     const elementHeight = this.el.nativeElement.offsetHeight;
     const windowHeight = window.innerHeight;

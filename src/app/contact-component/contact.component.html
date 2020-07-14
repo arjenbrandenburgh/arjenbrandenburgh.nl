@@ -1,23 +1,30 @@
 <section class="contact" id="contact">
-    <div class="container-fluid dgray-bg">
-        
-        <div class="section-title">
-            <h2>GET IN TOUCH</h2>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-8">
-                <p>Feel free to contact me for offers, inquiries or just friendly chatter.</p>
-            </div>
-
-            <div class="col-xs-12 col-md-4">
-                <div class="social-icons"> 
-                    <a *ngFor="let social of socialLinks" target="_blank" [href]="social.url"><i class="fab fa-2x" [ngClass]="social.icon" aria-hidden="true"></i></a>
-                </div>
-
-                <ul class="contact-info">
-                    <li>mail@arjenbrandenburgh.nl</li>
-                </ul>
-            </div>
-        </div>
+  <div class="container-fluid dgray-bg">
+    <div class="section-title">
+      <h2>GET IN TOUCH</h2>
     </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-8">
+        <p>
+          Feel free to contact me for offers, inquiries or just friendly
+          chatter.
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+        <div class="social-icons">
+          <a
+            *ngFor="let social of socialLinks"
+            target="_blank"
+            [href]="social.url"
+            ><fa-icon [icon]="social.icon" size="2x"></fa-icon>
+          </a>
+        </div>
+
+        <ul class="contact-info">
+          <li>mail@arjenbrandenburgh.nl</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>

@@ -1,8 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 
-import fontawesome from '@fortawesome/fontawesome';
-import faBars from '@fortawesome/fontawesome-free-solid';
-fontawesome.library.add(faBars);
+import {faBars} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'menu-component', // tslint:disable-line
@@ -10,6 +8,8 @@ fontawesome.library.add(faBars);
   styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent {
+  faBars = faBars;
+
   menuOpen = false;
 
   constructor() {}

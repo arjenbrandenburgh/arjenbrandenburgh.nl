@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { AppComponent } from './app.component';
 import { ScrollToDirective } from './shared/scroll-to.directive';
 
@@ -25,7 +27,7 @@ import { ContactComponent } from './contact-component/contact.component';
 
     ScrollToDirective,
   ],
-  imports: [BrowserAnimationsModule, BrowserModule],
+  imports: [BrowserAnimationsModule, BrowserModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
