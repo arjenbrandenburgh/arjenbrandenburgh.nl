@@ -12,7 +12,7 @@ export class Constants {
       {
         name: 'Github',
         icon: faGithub,
-        url: 'https://www.linkedin.com/in/arjenbrandenburgh/',
+        url: 'https://www.github.com/arjenbrandenburgh/',
       },
       {
         name: 'Medium',
